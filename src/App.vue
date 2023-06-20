@@ -1,7 +1,14 @@
 <template>
-  <h1 class="mt-9 text-center text-6xl">Title</h1>
+  <main-nav />
 </template>
 
-<script setup></script>
+<script>
+import MainNav from "@/components/MainNav.vue";
 
-<style scoped></style>
+export default {
+  name: "App",
+  components: {
+    MainNav,
+  },
+};
+</script>
