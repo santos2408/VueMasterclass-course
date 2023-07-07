@@ -12,7 +12,7 @@ describe("TextInput", () => {
     });
     const input = screen.getByRole("textbox");
     await userEvent.type(input, "NYC");
-    const messages = emitted()["update:modelValue"];
+    const messages = emitted()["update:model-value"];
     expect(messages).toEqual([["N"], ["NY"], ["NYC"]]);
   });
 });
